@@ -1,5 +1,5 @@
 import numpy as np
-import model 
+from src import model 
 
 def delta_energy(spins: np.ndarray, i, j, J = 1):
     return 2 * J * spins[i, j] * np.sum(model.get_neighbors(spins, i, j))
@@ -21,4 +21,4 @@ def run_simulation(spins: np.ndarray, beta, J, n_thermalization, n_sweeps, measu
     for step in range(n_sweeps):
         metropolis_sweep(spins, beta, J)
         if step % measure_interval == 0:
-            callback(spins, step)
+            callback(spins, step=step)

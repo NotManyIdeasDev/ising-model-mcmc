@@ -1,7 +1,7 @@
 import numpy as np
+
 def create_lattice(L):
     return np.random.choice([1, -1], size=(L, L))
-
 
 def get_neighbors(spins: np.ndarray, i, j):
     left = spins[i, (j - 1) % spins.shape[0]]
