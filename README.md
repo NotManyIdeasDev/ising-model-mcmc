@@ -1,5 +1,7 @@
 # 2D Ising Model Monte Carlo Simulation
 
+<img src="https://github.com/NotManyIdeasDev/ising-model-mcmc/blob/main/experiments/ising_gif.gif" width="400">
+
 Personal project to simulate the 2D Ising model (for magnetization) in Python using MCMC Methods (Metropolis Algorithm).
 
 ## Folder Structure
